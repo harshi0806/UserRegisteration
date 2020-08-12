@@ -9,24 +9,29 @@ class UserRegistration {
     public static void main(String[] args) {
         UserRegistration registration = new UserRegistration();
         if(registration.checkFirstName() == true) {
-            System.out.println("Entered name in correct format. ");
+            System.out.println("Enter name in correct format. ");
         } else{
             System.out.println("Enter valid first name");
         }
         if(registration.checkLastName() == true) {
-            System.out.println("Entered name in correct format. ");
+            System.out.println("Enter name in correct format. ");
         } else {
             System.out.println("Enter valid last name");
         }
         if(registration.checkValidEmail() == true) {
-            System.out.println("Entered email in correct format. ");
+            System.out.println("Enter email in correct format. ");
         } else {
             System.out.println("Enter valid email.");
         }
         if(registration.checkMobileFormat() == true) {
-            System.out.println("Entered mobile number in correct format. ");
+            System.out.println("Enter mobile number in correct format. ");
         } else {
             System.out.println("Enter valid format.");
+        }
+        if(registration.checkPassword() == true) {
+            System.out.println("Enter password in correct format. ");
+        } else {
+            System.out.println("Enter valid password.");
         }
     }
 
@@ -70,10 +75,10 @@ class UserRegistration {
             return false;
         }
     }
-    public boolean checkPasswordt() {
-        System.out.println("Enter valid email: ");
-        String mobileNumber = sc.next();
-        if(mobileNumber.matches( "^([1-9]{1,3}[- ]?)[0-9]{10}$" ) == true) {
+    public boolean checkPassword() {
+        System.out.println("Enter valid password: ");
+        String password = sc.next();
+        if(password.matches( "^[0-9a-zA-Z!@#$%^&*+]{8,}$") ) {
             return true;
         }
         else {

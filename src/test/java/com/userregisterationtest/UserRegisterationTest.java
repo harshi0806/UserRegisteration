@@ -52,4 +52,15 @@ public class UserRegisterationTest {
         boolean result = registeration.checkMobileFormat();
         Assert.assertFalse(result);
     }
+    @Test
+    public void enterPassword_WhenCorrect_ShouldReturnTrue() {
+        boolean result = registeration.checkPassword();
+        Assert.assertTrue(result);
+    }
+
+    @Test
+    public void enterPassword_WhenWrong_ShouldReturnFalse(){
+        boolean result = registeration.checkPassword();
+        Assert.assertFalse(result);
+    }
 }
