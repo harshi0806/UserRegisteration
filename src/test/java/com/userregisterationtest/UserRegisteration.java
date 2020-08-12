@@ -78,7 +78,7 @@ class UserRegistration {
     public boolean checkPassword() {
         System.out.println("Enter valid password: ");
         String password = sc.next();
-        if(password.matches( "^[0-9a-zA-Z!@#$%^&*+]{8,}$") ) {
+        if(password.matches( "^(?=.*[A-Z].*)[0-9a-zA-Z!@#$%^&*+]{8,}$") ) {
             return true;
         }
         else {
