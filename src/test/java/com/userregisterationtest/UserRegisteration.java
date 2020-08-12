@@ -70,4 +70,14 @@ class UserRegistration {
             return false;
         }
     }
+    public boolean checkPasswordt() {
+        System.out.println("Enter valid email: ");
+        String mobileNumber = sc.next();
+        if(mobileNumber.matches( "^([1-9]{1,3}[- ]?)[0-9]{10}$" ) == true) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }
