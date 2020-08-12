@@ -55,6 +55,7 @@ class UserRegistration {
             return false;
         }
     }
+    //Pattern checks for all the specified email format
     public boolean checkValidEmail() {
         System.out.println("Enter valid email: ");
         String enterEmail = sc.next();
@@ -75,6 +76,7 @@ class UserRegistration {
             return false;
         }
     }
+    //Pattern checks including all the specified format for password
     public boolean checkPassword() {
         System.out.println("Enter valid password: ");
         String password = sc.next();
