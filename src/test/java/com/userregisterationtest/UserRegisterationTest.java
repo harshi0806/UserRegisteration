@@ -16,4 +16,16 @@ public class UserRegisterationTest {
         boolean result = registeration.checkFirstName();
         Assert.assertFalse(result);
     }
+
+    @Test
+    public void enterLastName_WhenCorrect_ShouldReturnTrue() {
+        boolean result = registeration.checkLastName();
+        Assert.assertTrue(result);
+    }
+
+    @Test
+    public void enterLastName_WhenWrong_ShouldReturnFalse(){
+        boolean result = registeration.checkLastName();
+        Assert.assertFalse(result);
+    }
 }

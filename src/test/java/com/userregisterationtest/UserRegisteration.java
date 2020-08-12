@@ -25,4 +25,14 @@ class UserRegistration {
             return false;
         }
     }
+    public boolean checkLastName() {
+        System.out.println("Enter name: ");
+        String lastName = sc.next();
+        if(lastName.matches( "^([A-Z][a-zA-Z]{2,})$" ) == true){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }

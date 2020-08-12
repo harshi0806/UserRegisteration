@@ -1,0 +1,4 @@
+com/userregisterationtest/UserRegisteration.java
+ com.userregisterationtest.UserRegistration
+com/userregisterationtest/UserRegisterationTest.java
+ com.userregisterationtest.UserRegisterationTest
