@@ -40,4 +40,16 @@ public class UserRegisterationTest {
         boolean result = registeration.checkValidEmail();
         Assert.assertFalse(result);
     }
+
+    @Test
+    public void enterMobileNumber_WhenCorrect_ShouldReturnTrue() {
+        boolean result = registeration.checkMobileFormat();
+        Assert.assertTrue(result);
+    }
+
+    @Test
+    public void enterMobileNumber_WhenWrong_ShouldReturnFalse(){
+        boolean result = registeration.checkMobileFormat();
+        Assert.assertFalse(result);
+    }
 }

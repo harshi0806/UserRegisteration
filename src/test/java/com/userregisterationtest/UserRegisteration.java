@@ -23,6 +23,11 @@ class UserRegistration {
         } else {
             System.out.println("Enter valid email.");
         }
+        if(registration.checkMobileFormat() == true) {
+            System.out.println("Entered mobile number in correct format. ");
+        } else {
+            System.out.println("Enter valid format.");
+        }
     }
 
     public boolean checkFirstName() {
@@ -49,6 +54,16 @@ class UserRegistration {
         System.out.println("Enter valid email: ");
         String enterEmail = sc.next();
         if(enterEmail.matches( "^[0-9a-zA-Z]+([._+-][0-9a-zA-Z]+)*@[0-9a-zA-Z]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2})*$" ) == true) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    public boolean checkMobileFormat() {
+        System.out.println("Enter valid email: ");
+        String mobileNumber = sc.next();
+        if(mobileNumber.matches( "^([1-9]{1,3}[- ]?)[0-9]{10}$" ) == true) {
             return true;
         }
         else {
