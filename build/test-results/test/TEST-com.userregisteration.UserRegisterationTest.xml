@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.userregisteration.UserRegisterationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-08-17T15:42:26" hostname="LAPTOP-2I7PNUC9" time="0.004">
+  <properties/>
+  <testcase name="givenFirstName_whenShort_shouldReturnFalse" classname="com.userregisteration.UserRegisterationTest" time="0.001"/>
+  <testcase name="givenFirstName_whenProper_shouldReturnTrue" classname="com.userregisteration.UserRegisterationTest" time="0.0"/>
+  <testcase name="givenFirstName_whenStartWithSmallLetters_shouldReturnFalse" classname="com.userregisteration.UserRegisterationTest" time="0.0"/>
+  <testcase name="givenFirstName_whenHaveSpecialCharacters_shouldReturnFalse" classname="com.userregisteration.UserRegisterationTest" time="0.0"/>
+  <testcase name="givenFirstName_whenHaveNumbers_shouldReturnFalse" classname="com.userregisteration.UserRegisterationTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
